@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Premium Math Tutoring Payment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Access Premium Math Tutoring</h1>
+    <nav>
+      <a href="#instructions">Instructions</a>
+      <a href="#converter">Currency Converter</a>
+      <a href="#proof">Proof Submission</a>
+    </nav>
+  </header>
+  <main>
+    <section id="instructions">
+      <h2>Payment Instructions</h2>
+      <p>
+        Follow the steps below to gain access to our premium math tutoring platform:
+      </p>
+      <ol>
+        <li>
+          Deposit <strong>$9.99</strong> (or equivalent in your currency) to the following account: 
+          <strong>GT Bank Account Number: 2032202001590</strong>.
+        </li>
+        <li>Use the currency converter below to check the equivalent in your native currency.</li>
+        <li>
+          Email a receipt or proof of payment to: 
+          <strong><a href="mailto:yourstudybuddy303@gmail.com?subject=Proof of Payment for Math Tutoring">yourstudybuddy303@gmail.com</a></strong>.
+        </li>
+      </ol>
+      <p class="alert">
+        <strong>Important:</strong> If the correct amount isn't sent, you will not receive access to the site. Once verified, you will receive the access link within 24 hours.
+      </p>
+    </section>
+
+    <section id="converter">
+      <h2>Currency Converter</h2>
+      <div class="converter-container">
+        <label for="amount">Amount in USD:</label>
+        <input type="number" id="amount" value="9.99" disabled>
+        <label for="currency">Select Your Currency:</label>
+        <select id="currency"></select>
+        <button onclick="convertCurrency()">Convert</button>
+        <div class="currency-output" id="output"></div>
+      </div>
+    </section>
+
+    <section id="proof">
+      <h2>Proof of Payment Submission</h2>
+      <div class="proof-container">
+        <p>
+          Click the button below to email your proof of payment to us. Make sure the email includes your receipt and the subject line is prefilled.
+        </p>
+        <button onclick="openEmail()">Upload Proof of Payment</button>
+      </div>
+      <div class="progress-tracker">
+        <h3>Payment Status</h3>
+        <ul>
+          <li id="step1" class="completed">Step 1: Deposit Completed</li>
+          <li id="step2">Step 2: Currency Conversion Completed</li>
+          <li id="step3">Step 3: Proof of Payment Sent</li>
+          <li id="step4">Step 4: Access Link Received</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Premium Math Tutoring. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
